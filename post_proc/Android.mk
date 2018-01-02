@@ -27,6 +27,7 @@ ifeq ($(strip $(AUDIO_FEATURE_ENABLED_AUDIOSPHERE)),true)
 endif
 
 LOCAL_CFLAGS+= -O2 -fvisibility=hidden
+LOCAL_CFLAGS+= -Wno-error
 
 ifneq ($(strip $(AUDIO_FEATURE_DISABLED_DTS_EAGLE)),true)
     LOCAL_CFLAGS += -DDTS_EAGLE
